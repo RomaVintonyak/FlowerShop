@@ -43,3 +43,16 @@
   font-style: normal;
   font-family: inherit;
 }
+
+/*tetx mixin*/
+@mixin title{
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin text{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

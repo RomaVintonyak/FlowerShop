@@ -1,0 +1,87 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.menu {
+   width: 20%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: $bg-primary;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 3rem;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.2s linear, visibility 0.2s linear;
+   &__title {
+      margin-bottom: 2rem;
+      h3 {
+         color: $text-color;
+         font-family: $title;
+         font-size: 2.2rem;
+         font-weight: 400;
+         text-transform: uppercase;
+      }
+   }
+   &__content {
+      margin-bottom: 2rem;
+   }
+   &__footer {
+      &--phone {
+         a {
+            text-decoration: none;
+            font-family: $title;
+            font-size: 1.8rem;
+            color: $text-color;
+            transition: color 0.2s linear;
+            &:hover {
+               cursor: pointer;
+               color: $black;
+            }
+         }
+         margin-bottom: 2rem;
+      }
+      &--social{
+         a{
+            text-decoration: none;
+            color: $text-color;
+            i{
+               font-size: 3rem;
+            }
+            transition: color 0.2s linear;
+            &:hover{
+               color: $black;
+            }
+         }
+      }
+   }
+   &__open{
+      opacity: 1;
+      visibility: visible;
+   }
+}
+.main__menu {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   &--item {
+      margin-bottom: 1rem;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+   &--link {
+      text-decoration: none;
+      font-family: $text;
+      color: $text-color;
+      font-size: 1.8rem;
+      font-weight: 500;
+      transition: color 0.2s linear;
+      &:hover {
+         cursor: pointer;
+         color: $black;
+      }
+   }
+}
