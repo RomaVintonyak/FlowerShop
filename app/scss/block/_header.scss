@@ -10,6 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &--brand{
+      width: 10%;
+    }
     &--phone {
       a {
         text-decoration: none;

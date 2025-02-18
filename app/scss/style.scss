@@ -24,7 +24,6 @@ body{
   margin: 0;
   padding: 0;
   background-color: $white;
-  overflow-x: hidden;
 }
 *,
 *::before,
@@ -47,6 +46,9 @@ a {
     outline: none;
   }
 }
+/*==============vendor=============*/
+/*lightbox*/
+@import "vendor/lightbox.scss";
 /*==============block=============*/
 /*container*/
 @import "block/container.scss";
@@ -56,3 +58,7 @@ a {
 @import "block/menu.scss";
 /*intro*/
 @import "block/intro.scss";
+/*works*/
+@import "block/works.scss";
+/*footer*/
+@import "block/footer.scss";

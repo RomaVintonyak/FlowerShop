@@ -255,7 +255,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    overflow-x: hidden;
 }
 
 *,
@@ -279,6 +278,193 @@ p {
 
 a:focus {
     outline: none;
+}
+
+/*==============vendor=============*/
+/*lightbox*/
+body.lb-disable-scrolling {
+    overflow: hidden;
+}
+
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #e6d7d4;
+    opacity: 0.7;
+    display: none;
+}
+
+.lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+    outline: none;
+}
+
+.lightbox .lb-image {
+    display: block;
+    height: auto;
+    max-width: inherit;
+    max-height: none;
+    border-radius: 6px;
+    border: 5px solid white;
+}
+
+.lightbox a img {
+    border: none;
+}
+
+.lb-outerContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 4px;
+  /* Background color behind image.
+     This is visible during transitions. */
+    background-color: white;
+}
+
+.lb-outerContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lb-loader {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+
+.lb-cancel {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(../img/lightbox/loading.gif) no-repeat;
+}
+
+.lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.lb-container > .nav {
+    left: 0;
+}
+
+.lb-nav a {
+    outline: none;
+    background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
+}
+
+.lb-prev,
+.lb-next {
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.lb-nav a.lb-prev {
+    width: 34%;
+    left: 0;
+    float: left;
+    background: url(../img/lightbox/prev.png) left 48% no-repeat;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+    opacity: 1;
+}
+
+.lb-nav a.lb-next {
+    width: 64%;
+    right: 0;
+    float: right;
+    background: url(../img/lightbox/next.png) right 48% no-repeat;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+    opacity: 1;
+}
+
+.lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lb-data {
+    padding: 0 4px;
+    color: #605c40;
+}
+
+.lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+    color: #4ae;
+}
+
+.lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 1.6rem;
+    color: #605c40;
+}
+
+.lb-data .lb-close {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(../img/lightbox/close.png) top right no-repeat;
+    text-align: right;
+    outline: none;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+    cursor: pointer;
+    opacity: 1;
 }
 
 /*==============block=============*/
@@ -336,6 +522,10 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header__row--brand {
+    width: 10%;
 }
 
 .header__row--phone a {
@@ -407,6 +597,7 @@ a:focus {
     width: 20%;
     height: 100%;
     position: absolute;
+    z-index: 100;
     top: 0;
     left: 0;
     background-color: #e6d7d4;
@@ -503,7 +694,11 @@ a:focus {
 /*tetx mixin*/
 .intro {
     width: 100%;
-    height: 95vh;
+    height: 91vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .intro__row {
@@ -513,6 +708,8 @@ a:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 .intro__row--title {
@@ -565,4 +762,195 @@ a:focus {
     color: #ffffff;
     background-color: #605c40;
     cursor: pointer;
+}
+
+.intro::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 215, 212, 0.4);
+}
+
+/*works*/
+/*tetx mixin*/
+.works {
+    margin-top: 4rem;
+}
+
+.works__row--title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.works__row--title h3 {
+    font-family: "Yeseva One", serif;
+    color: #605c40;
+    font-size: 5rem;
+}
+
+.works__row--content {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.product__card {
+    width: 22%;
+    background-color: rgba(230, 215, 212, 0.6);
+    margin: 0 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e6d7d4;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.product__card--img {
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.product__card--img a {
+    text-decoration: none;
+}
+
+.product__card--img a img {
+    transition: transform 0.3s linear;
+}
+
+.product__card--img a:hover img {
+    transform: scale(1.2);
+}
+
+.product__card--title {
+    margin-bottom: 1rem;
+}
+
+.product__card--title h3 {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.product__card--title p {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.product__card--price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.product__card--price p {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.product__card--price p:last-child {
+    margin-right: 0;
+}
+
+.product__card--button button {
+    border: 1px solid #605c40;
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    background-color: #e6d7d4;
+    padding: 1rem 2rem;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.product__card--button button:hover {
+    color: #ffffff;
+    background-color: #605c40;
+    cursor: pointer;
+}
+
+/*footer*/
+/*tetx mixin*/
+.footer {
+    margin-top: 4rem;
+    padding: 1rem 0;
+    width: 100%;
+    background-color: rgba(230, 215, 212, 0.6);
+}
+
+.footer__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer__row--brand {
+    width: 20%;
+}
+
+.footer__row--menu {
+    width: 40%;
+}
+
+.footer__row--location {
+    width: 30%;
+}
+
+.location__text {
+    margin-bottom: 1rem;
+}
+
+.location__text p {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.location__text p:last-child {
+    margin-bottom: 0;
+}
+
+.location__img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.location__img img {
+    width: 15%;
+    margin-right: 1rem;
+}
+
+.location__img img:last-child {
+    margin-right: 0;
+}
+
+.footer__line {
+    margin: 2rem 0;
+    width: 100%;
+    height: 1px;
+    background-color: #605c40;
+}
+
+.footer__copyright {
+    text-align: center;
+}
+
+.footer__copyright p {
+    font-family: "Yeseva One", serif;
+    font-size: 1.7rem;
+    color: #605c40;
+    font-weight: 400;
 }

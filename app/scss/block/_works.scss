@@ -1,0 +1,94 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.works {
+   margin-top: 4rem;
+   &__row {
+      &--title {
+         text-align: center;
+         margin-bottom: 2rem;
+         h3 {
+            font-family: $title;
+            color: $text-color;
+            font-size: 5rem;
+         }
+      }
+      &--content {
+         display: flex;
+         align-items: stretch;
+         flex-wrap: wrap;
+      }
+   }
+}
+.product__card {
+   width: 22%;
+   background-color: rgba($bg-primary, 0.6);
+   margin: 0 1rem 2rem 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   border: 1px solid $bg-primary;
+   border-radius: 5px;
+   padding: 1rem;
+   &--img {
+      margin-bottom: 1rem;
+      overflow: hidden;
+      a {
+         text-decoration: none;
+         img {
+            transition: transform 0.3s linear;
+         }
+         &:hover {
+            img {
+               transform: scale(1.2);
+            }
+         }
+      }
+   }
+   &--title {
+      margin-bottom: 1rem;
+      h3 {
+         font-family: $text;
+         color: $text-color;
+         font-size: 2rem;
+         font-weight: 500;
+         margin-bottom: 0.5rem;
+      }
+      p {
+         font-family: $text;
+         color: $text-color;
+         font-size: 1.7rem;
+         font-weight: 400;
+      }
+   }
+   &--price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      p {
+         font-family: $text;
+         color: $text-color;
+         font-size: 2rem;
+         font-weight: 500;
+         margin-right: 1rem;
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+   &--button {
+      button {
+         border: 1px solid $text-color;
+         font-family: $text;
+         color: $text-color;
+         background-color: $bg-primary;
+         padding: 1rem 2rem;
+         transition: color 0.2s linear, background-color 0.2s linear;
+         &:hover {
+            color: $white;
+            background-color: $text-color;
+            cursor: pointer;
+         }
+      }
+   }
+}
