@@ -6,6 +6,7 @@
   width: 100%;
   padding: 1rem 0;
   background-color: rgba($bg-primary, 0.6);
+  transition: all 0.2s linear;
   &__row {
     display: flex;
     align-items: center;
@@ -26,6 +27,13 @@
         }
       }
     }
+  }
+  &__fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background-color: rgba($bg-primary, 0.9);
   }
 }
 .burger__btn {

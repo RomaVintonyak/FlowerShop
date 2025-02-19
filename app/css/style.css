@@ -516,6 +516,7 @@ body.lb-disable-scrolling {
     width: 100%;
     padding: 1rem 0;
     background-color: rgba(230, 215, 212, 0.6);
+    transition: all 0.2s linear;
 }
 
 .header__row {
@@ -539,6 +540,14 @@ body.lb-disable-scrolling {
 .header__row--phone a:hover {
     cursor: pointer;
     color: #000000;
+}
+
+.header__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background-color: rgba(230, 215, 212, 0.9);
 }
 
 .burger__btn {
@@ -596,7 +605,7 @@ body.lb-disable-scrolling {
 .menu {
     width: 20%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     top: 0;
     left: 0;
@@ -953,4 +962,313 @@ body.lb-disable-scrolling {
     font-size: 1.7rem;
     color: #605c40;
     font-weight: 400;
+}
+
+/*backtop*/
+/*tetx mixin*/
+.backtop {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 3rem;
+    height: 3rem;
+    z-index: 15;
+    border-radius: 3px;
+    background-color: rgba(230, 215, 212, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear, background-color 0.2s linear;
+}
+
+.backtop button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #e6d7d4;
+}
+
+.backtop button i {
+    color: #605c40;
+    transition: color 0.2s linear;
+}
+
+.backtop:hover {
+    background-color: #ffffff;
+}
+
+.backtop:hover button {
+    cursor: pointer;
+}
+
+.backtop:hover button i {
+    color: #000000;
+}
+
+.backtop__active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*modal*/
+/*tetx mixin*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+}
+
+.modal__mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 215, 212, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__body {
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 70%;
+    border-radius: 0.5rem;
+}
+
+.modal__body--button {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.modal__body--button button {
+    background-color: rgba(230, 215, 212, 0.9);
+    border: 1px solid #e6d7d4;
+    border-radius: 0.3rem;
+    width: 4rem;
+    height: 4rem;
+    transition: background-color 0.2s linear;
+}
+
+.modal__body--button button i {
+    color: #605c40;
+    font-size: 2rem;
+    transition: color 0.2s linear;
+}
+
+.modal__body--button button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.modal__body--button button:hover i {
+    color: #000000;
+}
+
+.modal__body--title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modal__body--title h3 {
+    font-family: "Yeseva One", serif;
+    color: #605c40;
+    font-size: 2.2rem;
+}
+
+.shoping__form h3 {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.shoping__form--block {
+    width: 100%;
+    position: relative;
+    margin-bottom: 3.5rem;
+}
+
+.shoping__form--block:last-child {
+    margin-bottom: 0;
+}
+
+.shoping__form--block i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2.5rem;
+    color: #605c40;
+}
+
+@media (max-width: 768px) {
+    .shoping__form--block i {
+        font-size: 2rem;
+    }
+}
+
+.shoping__form--block input {
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #605c40;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 95%;
+    height: 3.5rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #605c40;
+}
+
+.shoping__form--block input:focus {
+    outline: none;
+    border-bottom-color: #e6d7d4;
+}
+
+@media (max-width: 768px) {
+    .shoping__form--block input {
+        font-size: 1.5rem;
+    }
+}
+
+.shoping__form--block label {
+    position: relative;
+    top: -1rem;
+    left: 6%;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #605c40;
+    font-family: "Playfair Display", serif;
+    transition: font-size 0.1s linear, top 0.1s linear;
+}
+
+@media (max-width: 768px) {
+    .shoping__form--block label {
+        font-size: 1.5rem;
+    }
+}
+
+.shoping__form--block textarea {
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #605c40;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 95%;
+    height: 4rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #605c40;
+    resize: none;
+}
+
+.shoping__form--block textarea:focus {
+    outline: none;
+    border-bottom-color: #e6d7d4;
+}
+
+@media (max-width: 768px) {
+    .shoping__form--block textarea {
+        font-size: 1.5rem;
+    }
+}
+
+.shoping__form--button {
+    margin-bottom: 1.5rem;
+}
+
+.shoping__form--button button {
+    border: none;
+    background-color: transparent;
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    color: #605c40;
+    font-weight: 500;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: #e6d7d4;
+    border: 1px solid #e6d7d4;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.shoping__form--button button i {
+    margin-left: 0.5rem;
+    color: #605c40;
+    font-size: 1.7rem;
+    transition: color 0.2s linear;
+}
+
+.shoping__form--button button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.shoping__form--button button:hover i {
+    color: #000000;
+}
+
+.shoping__form--button button:active {
+    transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+    .shoping__form--button button {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+.error__text {
+    width: 100%;
+    height: 2.2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #605c40;
+}
+
+@media (max-width: 768px) {
+    .error__text {
+        font-size: 1.5rem;
+    }
+}
+
+#name:focus ~ label[for="name"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
+}
+
+#surname:focus ~ label[for="surname"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
+}
+
+#phone:focus ~ label[for="phone"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
+}
+
+#message:focus ~ label[for="message"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
+}
+
+#titleFlowers:focus ~ label[for="titleFlowers"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
+}
+
+#descriptionFlowers:focus ~ label[for="descriptionFlowers"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
+}
+
+#priceFlowers:focus ~ label[for="priceFlowers"] {
+    font-size: 1.2rem;
+    top: -2.7rem;
 }
