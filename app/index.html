@@ -131,7 +131,7 @@
               <h3 class="_title">
                 Букет з 21 троянди
               </h3>
-              <p>
+              <p class="_description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div><!--/.title-->
@@ -144,7 +144,7 @@
               </p>
             </div><!--/.price-->
             <div class="product__card--button">
-              <button type="button" data-button="byePosition">
+              <button type="button" class="_byePosition" data-button="byePosition">
                 Замовити
               </button>
             </div><!--/.button-->
@@ -159,7 +159,7 @@
               <h3 class="_title">
                 Букет з 21 троянди
               </h3>
-              <p>
+              <p class="_description">
                 Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Blanditiis, maiores!
               </p>
@@ -173,7 +173,7 @@
               </p>
             </div><!--/.price-->
             <div class="product__card--button">
-              <button type="button" data-button="byePosition">
+              <button type="button" class="_byePosition" data-button="byePosition">
                 Замовити
               </button>
             </div><!--/.button-->
@@ -188,7 +188,7 @@
               <h3 class="_title">
                 Букет з 21 троянди
               </h3>
-              <p>
+              <p class="_description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Lorem, ipsum dolor.
               </p>
@@ -202,7 +202,7 @@
               </p>
             </div><!--/.price-->
             <div class="product__card--button">
-              <button type="button" data-button="byePosition">
+              <button type="button" class="_byePosition" data-button="byePosition">
                 Замовити
               </button>
             </div><!--/.button-->
@@ -217,7 +217,7 @@
               <h3 class="_title">
                 Букет з 21 троянди
               </h3>
-              <p>
+              <p class="_description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
@@ -231,7 +231,7 @@
               </p>
             </div><!--/.price-->
             <div class="product__card--button">
-              <button type="button" data-button="byePosition">
+              <button type="button" class="_byePosition" data-button="byePosition">
                 Замовити
               </button>
             </div><!--/.button-->
@@ -246,7 +246,7 @@
               <h3 class="_title">
                 Букет з 21 троянди
               </h3>
-              <p>
+              <p class="_description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div><!--/.title-->
@@ -259,7 +259,7 @@
               </p>
             </div><!--/.price-->
             <div class="product__card--button">
-              <button type="button" data-button="byePosition">
+              <button type="button" class="_byePosition" data-button="byePosition">
                 Замовити
               </button>
             </div><!--/.button-->
@@ -274,7 +274,7 @@
               <h3 class="_title">
                 Букет з 21 троянди
               </h3>
-              <p>
+              <p class="_description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div><!--/.title-->
@@ -287,7 +287,7 @@
               </p>
             </div><!--/.price-->
             <div class="product__card--button">
-              <button type="button" data-button="byePosition">
+              <button type="button" class="_byePosition" data-button="byePosition">
                 Замовити
               </button>
             </div><!--/.button-->
@@ -302,7 +302,7 @@
               <h3 class="_title">
                 Букет з 21 троянди
               </h3>
-              <p>
+              <p class="_description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div><!--/.title-->
@@ -315,7 +315,7 @@
               </p>
             </div><!--/.price-->
             <div class="product__card--button">
-              <button type="button" data-button="byePosition">
+              <button type="button" class="_byePosition" data-button="byePosition">
                 Замовити
               </button>
             </div><!--/.button-->
@@ -330,7 +330,7 @@
               <h3 class="_title">
                 Букет з 21 троянди
               </h3>
-              <p>
+              <p class="_description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div><!--/.title-->
@@ -343,7 +343,7 @@
               </p>
             </div><!--/.price-->
             <div class="product__card--button">
-              <button type="button" data-button="byePosition">
+              <button type="button" class="_byePosition" data-button="byePosition">
                 Замовити
               </button>
             </div><!--/.button-->
@@ -454,22 +454,23 @@
               <h3>Замовлення</h3>
               <div class="shoping__form--block">
                 <i class="fas fa-signature"></i>
-                <input type="text" id="titleFlowers" name="titleFlowers">
+                <input type="text" id="titleFlowers" name="titleFlowers" value="Букет з 21 троянди" disabled>
                 <label id="labelTitleFlowers" for="titleFlowers">Назва букета</label>
               </div><!--/.block-->
               <div class="shoping__form--block">
                 <i class="fas fa-audio-description"></i>
-                <input type="text" id="descriptionFlowers" name="descriptionFlowers">
+                <input type="text" id="descriptionFlowers" name="descriptionFlowers" value="Lorem, ipsum dolor sit amet consectetur adipisicing elit." disabled>
                 <label id="labelDescriptionFlowers" for="descriptionFlowers">Опис</label>
               </div><!--/.block-->
               <div class="shoping__form--block">
                 <i class="fas fa-money-bill"></i>
-                <input type="text" id="priceFlowers" name="priceFlowers">
-                <label id="labelPriceFlowers" for="priceFlowers">Ціна</label>
+                <input type="text" id="priceFlowers" name="priceFlowers" value="1560" disabled>
+                <label id="labelPriceFlowers" for="priceFlowers">Ціна грн.</label>
               </div><!--/.block-->
               <div class="shoping__form--button text__center"> 
                 <p class="privat__policy">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, omnis?
+                  Натискаючи кнопку "Відправити" Ви надаєте згоду на обробку Ващих персональних даних для отримання
+                  замовлення, та погоджуєтесь із умовами оплати та доставки вибраного замовлення.
                 </p>
                 <button id="sendMail" type="button">
                   Відправити
@@ -490,5 +491,7 @@
   <script src="js/vendor/lightbox.min.js"></script>
   <!-- main script -->
   <script src="js/main.js"></script>
+  <!-- modal script -->
+  <script src="js/modal.js"></script>
 </body>
 </html>
