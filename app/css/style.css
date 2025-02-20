@@ -1261,11 +1261,6 @@ body.lb-disable-scrolling {
     top: -2.7rem;
 }
 
-#surname:focus ~ label[for="surname"] {
-    font-size: 1.2rem;
-    top: -2.7rem;
-}
-
 #phone:focus ~ label[for="phone"] {
     font-size: 1.2rem;
     top: -2.7rem;
@@ -1289,4 +1284,48 @@ body.lb-disable-scrolling {
 #labelPriceFlowers {
     font-size: 1.2rem;
     top: -2.7rem;
+}
+
+#titleFlowers[disabled] {
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+#descriptionFlowers[disabled] {
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+#priceFlowers[disabled] {
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+/*about*/
+/*tetx mixin*/
+.about__us {
+    margin-top: 4rem;
+}
+
+.about__content--title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about__content--title h3 {
+    font-family: "Yeseva One", serif;
+    font-size: 5rem;
+    color: #605c40;
+}
+
+.about__content--text p {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #605c40;
+    margin-bottom: 2rem;
+}
+
+.about__content--text p:last-child {
+    margin-bottom: 0;
 }
