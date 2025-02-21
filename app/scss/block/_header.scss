@@ -11,8 +11,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &--brand{
+    &--brand {
       width: 10%;
+      @include tablet {
+        width: 12%;
+      }
+      @include mobile {
+        width: 15%;
+      }
+      @include mobile-sm {
+        width: 20%;
+      }
+      @include mobile-xsm {
+        width: 25%;
+      }
     }
     &--phone {
       a {
@@ -21,14 +33,20 @@
         font-size: 1.8rem;
         font-family: $title;
         transition: color 0.2s linear;
-        &:hover{
+        &:hover {
           cursor: pointer;
           color: $black;
+        }
+        @include mobile-sm {
+          font-size: 1.6rem;
+        }
+        @include mobile-xsm {
+          font-size: 1.5rem;
         }
       }
     }
   }
-  &__fixed{
+  &__fixed {
     position: fixed;
     top: 0;
     left: 0;

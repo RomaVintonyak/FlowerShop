@@ -11,13 +11,32 @@
             font-family: $title;
             color: $text-color;
             font-size: 5rem;
+            @include tablet {
+               font-size: 4.5rem;
+            }
+            @include mobile {
+               font-size: 4rem;
+            }
+            @include mobile-sm {
+               font-size: 3rem;
+            }
+         }
+         @include mobile {
+            margin-bottom: 1.5rem;
          }
       }
       &--content {
          display: flex;
          align-items: stretch;
          flex-wrap: wrap;
+         justify-content: center;
       }
+   }
+   @include tablet {
+      margin-top: 3rem;
+   }
+   @include mobile {
+      margin-top: 2rem;
    }
 }
 .product__card {
@@ -90,5 +109,17 @@
             cursor: pointer;
          }
       }
+   }
+   @include notebook {
+      width: 31%;
+   }
+   @include tablet {
+      width: 40%;
+   }
+   @include mobile {
+      width: 70%;
+   }
+   @include mobile-sm {
+      width: 100%;
    }
 }

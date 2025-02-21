@@ -529,6 +529,30 @@ body.lb-disable-scrolling {
     width: 10%;
 }
 
+@media (max-width: 991px) {
+    .header__row--brand {
+        width: 12%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__row--brand {
+        width: 15%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__row--brand {
+        width: 20%;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__row--brand {
+        width: 25%;
+    }
+}
+
 .header__row--phone a {
     text-decoration: none;
     color: #605c40;
@@ -540,6 +564,18 @@ body.lb-disable-scrolling {
 .header__row--phone a:hover {
     cursor: pointer;
     color: #000000;
+}
+
+@media (max-width: 576px) {
+    .header__row--phone a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__row--phone a {
+        font-size: 1.5rem;
+    }
 }
 
 .header__fixed {
@@ -631,8 +667,26 @@ body.lb-disable-scrolling {
     text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+    .menu__title h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu__title {
+        margin-bottom: 1.5rem;
+    }
+}
+
 .menu__content {
     margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .menu__content {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .menu__footer--phone {
@@ -652,6 +706,24 @@ body.lb-disable-scrolling {
     color: #000000;
 }
 
+@media (max-width: 576px) {
+    .menu__footer--phone a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu__footer--phone a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu__footer--phone {
+        margin-bottom: 1.5rem;
+    }
+}
+
 .menu__footer--social a {
     text-decoration: none;
     color: #605c40;
@@ -661,6 +733,12 @@ body.lb-disable-scrolling {
 
 .menu__footer--social a i {
     font-size: 3rem;
+}
+
+@media (max-width: 576px) {
+    .menu__footer--social a i {
+        font-size: 2rem;
+    }
 }
 
 .menu__footer--social a:hover {
@@ -674,6 +752,37 @@ body.lb-disable-scrolling {
 .menu__open {
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 1366px) {
+    .menu {
+        padding-left: 2rem;
+        width: 22%;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu {
+        width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        width: 65%;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu {
+        width: 75%;
+    }
 }
 
 .main__menu {
@@ -702,6 +811,18 @@ body.lb-disable-scrolling {
 .main__menu--link:hover {
     cursor: pointer;
     color: #000000;
+}
+
+@media (max-width: 576px) {
+    .main__menu--link {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .main__menu--link {
+        font-size: 1.5rem;
+    }
 }
 
 /*intro*/
@@ -738,11 +859,53 @@ body.lb-disable-scrolling {
     text-transform: uppercase;
 }
 
+@media (max-width: 991px) {
+    .intro__row--title h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro__row--title h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro__row--title h1 {
+        font-size: 3rem;
+    }
+}
+
 .intro__row--title p {
     font-family: "Playfair Display", serif;
     font-size: 2.5rem;
     color: #605c40;
     font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .intro__row--title p {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro__row--title p {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro__row--title p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro__row--title {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .intro__row--content {
@@ -756,6 +919,24 @@ body.lb-disable-scrolling {
     color: #605c40;
 }
 
+@media (max-width: 991px) {
+    .intro__row--content h3 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro__row--content h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro__row--content h3 {
+        font-size: 2.5rem;
+    }
+}
+
 .intro__row--content p {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
@@ -763,9 +944,34 @@ body.lb-disable-scrolling {
     font-weight: 500;
 }
 
+@media (max-width: 991px) {
+    .intro__row--content p {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro__row--content p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro__row--content p {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro__row--content {
+        margin-bottom: 2rem;
+    }
+}
+
 .intro__row--button a {
     text-decoration: none;
     font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
     color: #605c40;
     background-color: #e6d7d4;
     padding: 1rem 2rem;
@@ -806,10 +1012,47 @@ body.lb-disable-scrolling {
     font-size: 5rem;
 }
 
+@media (max-width: 991px) {
+    .works__row--title h3 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .works__row--title h3 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .works__row--title h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .works__row--title {
+        margin-bottom: 1.5rem;
+    }
+}
+
 .works__row--content {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .works {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .works {
+        margin-top: 2rem;
+    }
 }
 
 .product__card {
@@ -893,6 +1136,30 @@ body.lb-disable-scrolling {
     cursor: pointer;
 }
 
+@media (max-width: 1366px) {
+    .product__card {
+        width: 31%;
+    }
+}
+
+@media (max-width: 991px) {
+    .product__card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product__card {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .product__card {
+        width: 100%;
+    }
+}
+
 /*footer*/
 /*tetx mixin*/
 .footer {
@@ -918,6 +1185,18 @@ body.lb-disable-scrolling {
 
 .footer__row--location {
     width: 30%;
+}
+
+@media (max-width: 991px) {
+    .footer {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 2rem;
+    }
 }
 
 .location__text {

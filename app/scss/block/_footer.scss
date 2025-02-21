@@ -20,6 +20,12 @@
          width: 30%;
       }
    }
+   @include tablet {
+      margin-top: 3rem;
+   }
+   @include mobile {
+      margin-top: 2rem;
+   }
 }
 .location__text {
    margin-bottom: 1rem;

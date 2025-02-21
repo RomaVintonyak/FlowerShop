@@ -25,12 +25,33 @@
             font-size: 5rem;
             color: $text-color;
             text-transform: uppercase;
+            @include tablet {
+               font-size: 4.5rem;
+            }
+            @include mobile {
+               font-size: 4rem;
+            }
+            @include mobile-sm {
+               font-size: 3rem;
+            }
          }
          p {
             font-family: $text;
             font-size: 2.5rem;
             color: $text-color;
             font-weight: 500;
+            @include tablet {
+               font-size: 2.3rem;
+            }
+            @include mobile {
+               font-size: 2.2rem;
+            }
+            @include mobile-sm {
+               font-size: 2rem;
+            }
+         }
+         @include mobile {
+            margin-bottom: 1.5rem;
          }
       }
       &--content {
@@ -40,18 +61,40 @@
             font-family: $title;
             font-size: 4rem;
             color: $text-color;
+            @include tablet {
+               font-size: 3.5rem;
+            }
+            @include mobile {
+               font-size: 3rem;
+            }
+            @include mobile-sm {
+               font-size: 2.5rem;
+            }
          }
          p {
             font-family: $text;
             font-size: 2rem;
             color: $text-color;
             font-weight: 500;
+            @include tablet {
+               font-size: 1.9rem;
+            }
+            @include mobile {
+               font-size: 1.8rem;
+            }
+            @include mobile-sm {
+               font-size: 1.7rem;
+            }
+         }
+         @include mobile {
+            margin-bottom: 2rem;
          }
       }
       &--button {
          a {
             text-decoration: none;
             font-family: $text;
+            font-size: 1.7rem;
             color: $text-color;
             background-color: $bg-primary;
             padding: 1rem 2rem;
@@ -64,7 +107,7 @@
          }
       }
    }
-   &::after{
+   &::after {
       content: "";
       position: absolute;
       z-index: 5;
