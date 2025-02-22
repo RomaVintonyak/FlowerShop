@@ -47,10 +47,17 @@ jQuery(document).ready(function () {
    nameField.blur(function () {
       var nameFieldData = $(this).val();
       if (nameFieldData.length >= 1) {
-         $("#lebelName").css({
-            "font-size": "1.2rem",
-            "top": "-2.7rem"
-         });
+         if ($(window).width() > 768) {
+            $("#lebelName").css({
+               "font-size": "1.2rem",
+               "top": "-2.7rem"
+            });
+         } else {
+            $("#lebelName").css({
+               "font-size": "1.2rem",
+               "top": "-2rem"
+            });
+         }
       } else {
          $("#lebelName").removeAttr("style");
       }
@@ -59,10 +66,17 @@ jQuery(document).ready(function () {
    phoneField.blur(function () {
       var phoneFieldData = $(this).val();
       if (phoneFieldData.length >= 1) {
-         $("#labelPhone").css({
-            "font-size": "1.2rem",
-            "top": "-2.7rem"
-         });
+         if ($(window).width() > 768) {
+            $("#labelPhone").css({
+               "font-size": "1.2rem",
+               "top": "-2.7rem"
+            });
+         } else {
+            $("#labelPhone").css({
+               "font-size": "1.2rem",
+               "top": "-2rem"
+            });
+         }
       } else {
          $("#labelPhone").removeAttr("style");
       }
@@ -71,10 +85,17 @@ jQuery(document).ready(function () {
    messageField.blur(function () {
       var messageFieldData = $(this).val();
       if (messageFieldData.length >= 1) {
-         $("#labelMessage").css({
-            "font-size": "1.2rem",
-            "top": "-3.5rem"
-         });
+         if ($(window).width() > 768) {
+            $("#labelMessage").css({
+               "font-size": "1.2rem",
+               "top": "-2.7rem"
+            });
+         } else {
+            $("#labelMessage").css({
+               "font-size": "1.2rem",
+               "top": "-2rem"
+            });
+         }
       } else {
          $("#labelMessage").removeAttr("style");
       }

@@ -12,12 +12,35 @@
       justify-content: space-between;
       &--brand {
          width: 20%;
+         @include tablet {
+            width: 15%;
+         }
+         @include mobile-sm {
+            width: 25%;
+         }
       }
       &--menu {
          width: 40%;
+         @include tablet {
+            width: 30%;
+         }
+         @include mobile-sm {
+            width: 100%;
+            margin-top: 1.5rem;
+         }
       }
       &--location {
          width: 30%;
+         @include tablet {
+            width: 50%;
+         }
+         @include mobile-sm {
+            margin-top: 1.5rem;
+            width: 100%;
+         }
+      }
+      @include mobile-sm {
+         flex-wrap: wrap;
       }
    }
    @include tablet {

@@ -3,6 +3,12 @@
 
 .about__us {
    margin-top: 4rem;
+   @include tablet {
+      margin-top: 3rem;
+   }
+   @include mobile {
+      margin-top: 2rem;
+   }
 }
 .about__content {
    &--title {
@@ -12,6 +18,18 @@
          font-family: $title;
          font-size: 5rem;
          color: $text-color;
+         @include tablet {
+            font-size: 4.5rem;
+         }
+         @include mobile {
+            font-size: 4rem;
+         }
+         @include mobile-sm {
+            font-size: 3rem;
+         }
+      }
+      @include mobile {
+         margin-bottom: 1.5rem;
       }
    }
    &--text {
@@ -24,6 +42,13 @@
          margin-bottom: 2rem;
          &:last-child {
             margin-bottom: 0;
+         }
+         @include mobile{
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+         }
+         @include mobile-sm{
+            font-size: 1.6rem;
          }
       }
       &::after {

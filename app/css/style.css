@@ -1179,12 +1179,56 @@ body.lb-disable-scrolling {
     width: 20%;
 }
 
+@media (max-width: 991px) {
+    .footer__row--brand {
+        width: 15%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__row--brand {
+        width: 25%;
+    }
+}
+
 .footer__row--menu {
     width: 40%;
 }
 
+@media (max-width: 991px) {
+    .footer__row--menu {
+        width: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__row--menu {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+}
+
 .footer__row--location {
     width: 30%;
+}
+
+@media (max-width: 991px) {
+    .footer__row--location {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__row--location {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__row {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1344,6 +1388,12 @@ body.lb-disable-scrolling {
     transition: color 0.2s linear;
 }
 
+@media (max-width: 768px) {
+    .modal__body--button button i {
+        font-size: 1.7rem;
+    }
+}
+
 .modal__body--button button:hover {
     cursor: pointer;
     background-color: #ffffff;
@@ -1351,6 +1401,19 @@ body.lb-disable-scrolling {
 
 .modal__body--button button:hover i {
     color: #000000;
+}
+
+@media (max-width: 768px) {
+    .modal__body--button button {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal__body--button {
+        margin-bottom: 0.5rem;
+    }
 }
 
 .modal__body--title {
@@ -1364,6 +1427,43 @@ body.lb-disable-scrolling {
     font-size: 2.2rem;
 }
 
+@media (max-width: 768px) {
+    .modal__body--title h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal__body--title h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .modal__body--title h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal__body--title {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .modal__body {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal__body {
+        padding: 0.5rem;
+        width: 92%;
+    }
+}
+
 .modal__open {
     transform: scale(1);
     opacity: 1;
@@ -1375,6 +1475,27 @@ body.lb-disable-scrolling {
     color: #605c40;
     font-size: 2rem;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .shoping__form h3 {
+        font-size: 1.8rem;
+        margin-bottom: 2.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .shoping__form h3 {
+        font-size: 1.7rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .shoping__form h3 {
+        font-size: 1.6rem;
+        margin-bottom: 2.2rem;
+    }
 }
 
 .shoping__form--block {
@@ -1424,6 +1545,13 @@ body.lb-disable-scrolling {
 @media (max-width: 768px) {
     .shoping__form--block input {
         font-size: 1.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .shoping__form--block input {
+        height: 2rem;
     }
 }
 
@@ -1441,6 +1569,12 @@ body.lb-disable-scrolling {
 @media (max-width: 768px) {
     .shoping__form--block label {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .shoping__form--block label {
+        font-size: 1.3rem;
     }
 }
 
@@ -1468,6 +1602,25 @@ body.lb-disable-scrolling {
 @media (max-width: 768px) {
     .shoping__form--block textarea {
         font-size: 1.5rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .shoping__form--block textarea {
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .shoping__form--block {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .shoping__form--block {
+        margin-bottom: 2rem;
     }
 }
 
@@ -1517,12 +1670,42 @@ body.lb-disable-scrolling {
     }
 }
 
+@media (max-width: 576px) {
+    .shoping__form--button button {
+        padding: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .shoping__form--button {
+        margin-bottom: 0.5rem;
+    }
+}
+
 .privat__policy {
     font-family: "Playfair Display", serif;
     font-weight: 500;
     font-size: 1.7rem;
     color: #605c40;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .privat__policy {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .privat__policy {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .privat__policy {
+        font-size: 1.1rem;
+    }
 }
 
 .error__text {
@@ -1540,9 +1723,27 @@ body.lb-disable-scrolling {
     }
 }
 
+@media (max-width: 576px) {
+    .error__text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .error__text {
+        font-size: 1.1rem;
+    }
+}
+
 #name:focus ~ label[for="name"] {
     font-size: 1.2rem;
     top: -2.7rem;
+}
+
+@media (max-width: 576px) {
+    #name:focus ~ label[for="name"] {
+        top: -2rem;
+    }
 }
 
 #phone:focus ~ label[for="phone"] {
@@ -1550,9 +1751,27 @@ body.lb-disable-scrolling {
     top: -2.7rem;
 }
 
+@media (max-width: 576px) {
+    #phone:focus ~ label[for="phone"] {
+        top: -2rem;
+    }
+}
+
 #message:focus ~ label[for="message"] {
     font-size: 1.2rem;
     top: -3.5rem;
+}
+
+@media (max-width: 768px) {
+    #message:focus ~ label[for="message"] {
+        top: -2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #message:focus ~ label[for="message"] {
+        top: -2rem;
+    }
 }
 
 #labelTitleFlowers {
@@ -1560,14 +1779,32 @@ body.lb-disable-scrolling {
     top: -2.7rem;
 }
 
+@media (max-width: 576px) {
+    #labelTitleFlowers {
+        top: -2rem;
+    }
+}
+
 #labelDescriptionFlowers {
     font-size: 1.2rem;
     top: -2.7rem;
 }
 
+@media (max-width: 576px) {
+    #labelDescriptionFlowers {
+        top: -2rem;
+    }
+}
+
 #labelPriceFlowers {
     font-size: 1.2rem;
     top: -2.7rem;
+}
+
+@media (max-width: 576px) {
+    #labelPriceFlowers {
+        top: -2rem;
+    }
 }
 
 #titleFlowers[disabled] {
@@ -1591,6 +1828,18 @@ body.lb-disable-scrolling {
     margin-top: 4rem;
 }
 
+@media (max-width: 991px) {
+    .about__us {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__us {
+        margin-top: 2rem;
+    }
+}
+
 .about__content--title {
     margin-bottom: 2rem;
     text-align: center;
@@ -1600,6 +1849,30 @@ body.lb-disable-scrolling {
     font-family: "Yeseva One", serif;
     font-size: 5rem;
     color: #605c40;
+}
+
+@media (max-width: 991px) {
+    .about__content--title h3 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__content--title h3 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about__content--title h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__content--title {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .about__content--text {
@@ -1616,6 +1889,19 @@ body.lb-disable-scrolling {
 
 .about__content--text p:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .about__content--text p {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about__content--text p {
+        font-size: 1.6rem;
+    }
 }
 
 .about__content--text::after {
@@ -1635,6 +1921,18 @@ body.lb-disable-scrolling {
     margin-top: 4rem;
 }
 
+@media (max-width: 991px) {
+    .shipping {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .shipping {
+        margin-top: 2rem;
+    }
+}
+
 .shipping__content--title {
     margin-bottom: 2rem;
     text-align: center;
@@ -1644,6 +1942,30 @@ body.lb-disable-scrolling {
     font-family: "Yeseva One", serif;
     font-size: 5rem;
     color: #605c40;
+}
+
+@media (max-width: 991px) {
+    .shipping__content--title h3 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .shipping__content--title h3 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .shipping__content--title h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .shipping__content--title {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .shipping__content--text {
@@ -1660,6 +1982,19 @@ body.lb-disable-scrolling {
 
 .shipping__content--text p:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .shipping__content--text p {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .shipping__content--text p {
+        font-size: 1.6rem;
+    }
 }
 
 .shipping__content--text::after {
