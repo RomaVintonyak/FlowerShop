@@ -110,13 +110,13 @@
          }
       }
    }
-   @include notebook {
+   @include tablet {
       width: 30%;
    }
-   @include tablet {
+   @include mobile {
       width: 40%;
    }
-   @include mobile {
+   @include mobile-sm {
       width: 45%;
    }
    @include mobile-xsm {
