@@ -1036,6 +1036,132 @@ body.lb-disable-scrolling {
     }
 }
 
+.works__row--sort {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.works__row--sort .sort__title h3 {
+    font-family: "Yeseva One", serif;
+    color: #605c40;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 991px) {
+    .works__row--sort .sort__title h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .works__row--sort .sort__title h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .works__row--sort .sort__title h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .works__row--sort .sort__title h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .works__row--sort .sort__title h3 {
+        font-size: 1.4rem;
+    }
+}
+
+.works__row--sort .sort__block {
+    display: flex;
+    align-items: center;
+}
+
+.works__row--sort .sort__block h4 {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+    .works__row--sort .sort__block h4 {
+        display: none;
+    }
+}
+
+.works__row--sort .sort__block--radio {
+    margin-left: 1rem;
+    display: flex;
+    border: 1px solid #605c40;
+}
+
+.works__row--sort .sort__block--radio input {
+    display: none;
+}
+
+.works__row--sort .sort__block--radio input:checked + label {
+    background-color: #e6d7d4;
+    color: #000000;
+}
+
+.works__row--sort .sort__block--radio label {
+    padding: 0.5rem 1.5rem;
+    display: block;
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.works__row--sort .sort__block--radio label:last-child {
+    border-left: 1px solid #605c40;
+}
+
+.works__row--sort .sort__block--radio label:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .works__row--sort .sort__block--radio label {
+        font-size: 1.5rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .works__row--sort .sort__block--radio label {
+        font-size: 1.4rem;
+        padding: 0.4rem 0.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .works__row--sort .sort__block--radio label {
+        font-size: 1.3rem;
+        padding: 0.3rem 0.4rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .works__row--sort .sort__block--radio label {
+        font-size: 1.2rem;
+        padding: 0.2rem 0.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .works__row--sort {
+        margin-bottom: 1.5rem;
+    }
+}
+
 .works__row--content {
     display: flex;
     align-items: stretch;

@@ -36,6 +36,23 @@ jQuery(document).ready(function () {
       scrollTop: 0,
     }, 1000, "swing");
   });
+  /*sort catalog page*/
+  $("#lowPrice").click(function () {
+    var tovar = $(".product__card"),
+      catalog = $(".works__row--content");
+    tovar.sort(function (tovar, catalog) {
+      return tovar.getAttribute("data-order") - catalog.getAttribute("data-order");
+    }),
+      tovar.detach().appendTo(catalog);
+  });
+  $("#heightPrice").click(function () {
+    var tovarH = $(".product__card"),
+      catalogH = $(".works__row--content");
+    tovarH.sort(function (tovarH, catalogH) {
+      return catalogH.getAttribute("data-order") - tovarH.getAttribute("data-order");
+    }),
+      tovarH.detach().appendTo(catalogH);
+  });
   /*active style to label in contact form*/
   var contactNameField = $("#contactName");
   contactNameField.blur(function () {
