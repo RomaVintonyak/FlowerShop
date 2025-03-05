@@ -1145,14 +1145,13 @@ body.lb-disable-scrolling {
 @media (max-width: 450px) {
     .works__row--sort .sort__block--radio label {
         font-size: 1.3rem;
-        padding: 0.3rem 0.4rem;
+        padding: 0.4rem 0.4rem;
     }
 }
 
 @media (max-width: 350px) {
     .works__row--sort .sort__block--radio label {
         font-size: 1.2rem;
-        padding: 0.2rem 0.3rem;
     }
 }
 
