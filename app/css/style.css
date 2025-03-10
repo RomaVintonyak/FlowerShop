@@ -1168,6 +1168,13 @@ body.lb-disable-scrolling {
     justify-content: center;
 }
 
+.works__row--pagination {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
 @media (max-width: 991px) {
     .works {
         margin-top: 3rem;
@@ -1283,6 +1290,43 @@ body.lb-disable-scrolling {
     .product__card {
         width: 100%;
     }
+}
+
+.pagination__links {
+    display: flex;
+    align-items: flex-start;
+}
+
+.pagination__links a {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.2s linear;
+}
+
+.pagination__links a:hover {
+    color: #e6d7d4;
+}
+
+.pagination__links span {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    margin: 0 0.5rem;
+}
+
+.pagination__links .dots {
+    color: #e6d7d4;
+}
+
+.pagination__links .current {
+    color: #e6d7d4;
 }
 
 /*footer*/

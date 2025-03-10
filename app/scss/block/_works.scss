@@ -115,6 +115,12 @@
          flex-wrap: wrap;
          justify-content: center;
       }
+      &--pagination {
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         width: 100%;
+      }
    }
    @include tablet {
       margin-top: 3rem;
@@ -205,5 +211,38 @@
    }
    @include mobile-xsm {
       width: 100%;
+   }
+}
+.pagination {
+   &__links {
+      display: flex;
+      align-items: flex-start;
+      a {
+         font-family: $text;
+         color: $text-color;
+         font-size: 2rem;
+         font-weight: 700;
+         display: block;
+         text-decoration: none;
+         margin: 0 0.5rem;
+         transition: color 0.2s linear;
+         &:hover {
+            color: $bg-primary;
+         }
+      }
+      span {
+         font-family: $text;
+         color: $text-color;
+         font-size: 2rem;
+         font-weight: 700;
+         display: block;
+         margin: 0 0.5rem;
+      }
+      .dots {
+         color: $bg-primary;
+      }
+      .current {
+         color: $bg-primary;
+      }
    }
 }
