@@ -1171,7 +1171,6 @@ body.lb-disable-scrolling {
 .works__row--pagination {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     width: 100%;
 }
 
@@ -1294,17 +1293,17 @@ body.lb-disable-scrolling {
 
 .pagination__links {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .pagination__links a {
-    font-family: "Playfair Display", serif;
+    font-family: "Yeseva One", serif;
     color: #605c40;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     display: block;
     text-decoration: none;
-    margin: 0 0.5rem;
+    margin: 0 0.8rem;
     transition: color 0.2s linear;
 }
 
@@ -1313,12 +1312,12 @@ body.lb-disable-scrolling {
 }
 
 .pagination__links span {
-    font-family: "Playfair Display", serif;
+    font-family: "Yeseva One", serif;
     color: #605c40;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     display: block;
-    margin: 0 0.5rem;
+    margin: 0 0.8rem;
 }
 
 .pagination__links .dots {
