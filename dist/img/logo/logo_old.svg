@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="220" height="80" viewBox="0 0 220 80">
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="120" viewBox="0 0 240 120">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -30,17 +30,20 @@
 <defs>
     <style>
       .cls-1 {
-        font-size: 28.071px;
-        fill: #010000;
-        font-family: "Century725 Cn BT";
+        font-size: 66.666px;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #080201;
+        font-family: "Source Serif Variable";
       }
 
       .cls-2 {
-        font-size: 66.666px;
-        font-family: "Century751 BT";
+        font-size: 33.333px;
       }
     </style>
   </defs>
-  <text id="Flowers_for_you" data-name="Flowers for you" class="cls-1" transform="translate(5 71.86) scale(1.287 0.891)">Flowers for you</text>
-  <text id="Loren" class="cls-2" transform="matrix(1.227, 0.006, 0, 1, 1, 52)">Loren</text>
+  <text id="LOREN" class="cls-1" transform="translate(11.224 68.552) scale(0.923)">LOREN</text>
+  <text id="Квіти_для_неї" data-name="Квіти для неї" class="cls-2" transform="translate(13.063 97.846) scale(0.923)">Квіти для неї</text>
 </svg>

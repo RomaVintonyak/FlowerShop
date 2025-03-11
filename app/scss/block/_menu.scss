@@ -113,6 +113,9 @@
       &:last-child {
          margin-bottom: 0;
       }
+      .active {
+         color: $black;
+      }
    }
    &--link {
       text-decoration: none;
@@ -131,5 +134,28 @@
       @include mobile-xsm {
          font-size: 1.5rem;
       }
+   }
+}
+.header__row--menu {
+   .nav__menu {
+      .main__menu {
+         display: flex;
+         &--item {
+            margin-bottom: 0;
+            margin-right: 2rem;
+            &:last-child {
+               margin-right: 0;
+            }
+            .active {
+               color: $black;
+            }
+            @include tablet{
+               margin-right: 1.5rem;
+            }
+         }
+      }
+   }
+   @include mobile{
+      display: none;
    }
 }
