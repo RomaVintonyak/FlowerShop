@@ -1079,6 +1079,213 @@ body.lb-disable-scrolling {
     background-color: rgba(230, 215, 212, 0.4);
 }
 
+/*main page*/
+/*tetx mixin*/
+.text {
+    margin-top: 4rem;
+}
+
+.text__title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.text__title h3 {
+    font-family: "Yeseva One", serif;
+    color: #605c40;
+    font-size: 4rem;
+}
+
+@media (max-width: 991px) {
+    .text__title h3 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text__title h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .text__title h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text__title {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.text__suptitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.text__suptitle h4 {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+@media (max-width: 991px) {
+    .text__suptitle h4 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text__suptitle h4 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .text__suptitle h4 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text__suptitle {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.text__coll {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6d7d4;
+    margin-bottom: 2rem;
+}
+
+.text__coll--block {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid #e6d7d4;
+}
+
+.text__coll--block:hover .coll__block--text h5 {
+    color: #e6d7d4;
+}
+
+.text__coll--block:hover .coll__block--img svg {
+    fill: #e6d7d4;
+}
+
+.text__coll--block:last-child {
+    border-right: none;
+}
+
+@media (max-width: 768px) {
+    .text__coll {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.text__img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text__img--block {
+    width: 30%;
+    position: relative;
+}
+
+.text__img--block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    transition: transform 0.3s linear;
+    background-color: rgba(230, 215, 212, 0.3);
+}
+
+.text__img--block:hover .text__img--text {
+    left: 8%;
+}
+
+.text__img--block:hover::after {
+    transform: scale(0);
+}
+
+.text__img--text {
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    left: 5%;
+    transition: left 0.3s linear;
+}
+
+.text__img--text h5 {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.text__img--text p {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+@media (max-width: 991px) {
+    .text {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        margin-top: 2rem;
+    }
+}
+
+.coll__block--img {
+    width: 20%;
+}
+
+.coll__block--img svg {
+    transition: fill 0.1s linear;
+}
+
+.coll__block--text {
+    width: 75%;
+}
+
+.coll__block--text h5 {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    transition: color 0.1s linear;
+}
+
+.coll__block--text p {
+    font-family: "Playfair Display", serif;
+    color: #605c40;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
 /*works*/
 /*tetx mixin*/
 .works {
@@ -1093,24 +1300,24 @@ body.lb-disable-scrolling {
 .works__row--title h3 {
     font-family: "Yeseva One", serif;
     color: #605c40;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 @media (max-width: 991px) {
     .works__row--title h3 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .works__row--title h3 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 576px) {
     .works__row--title h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
