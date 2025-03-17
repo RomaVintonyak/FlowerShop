@@ -13,6 +13,50 @@ jQuery(document).ready(function () {
     'albumLabel': "Зображення %1 із %2",
     'disableScrolling': true
   });
+  /*main slider*/
+  var mainSlider = $("#mainSlider");
+  mainSlider.slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    draggable: false,
+    touchMove: false,
+    focusOnSelect: false,
+    swipe: false,
+    arrows: true,
+    prevArrow: '<button type="button" class="product__slider--prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="product__slider--next"><i class="fas fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          swipe: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
   /*fixed header*/
   var headerHeight = $("#header").height();
   $(window).on("scroll", function () {

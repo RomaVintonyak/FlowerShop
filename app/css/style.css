@@ -467,6 +467,116 @@ body.lb-disable-scrolling {
     opacity: 1;
 }
 
+/*slick slider*/
+/*tetx mixin*/
+.slick-slider {
+    position: relative;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.slick-slide {
+    float: left;
+    min-height: 1px;
+}
+
+[dir="rtl"] .slick-slide {
+    float: right;
+}
+
+.product__slider--prev {
+    position: absolute;
+    left: -1rem;
+    top: calc(50% - 2rem);
+    z-index: 5;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: #e6d7d4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s linear;
+}
+
+.product__slider--prev i {
+    font-size: 1.6rem;
+    transition: color 0.2s linear;
+}
+
+.product__slider--prev:hover {
+    cursor: pointer;
+    border-color: #000000;
+}
+
+.product__slider--prev:hover i {
+    color: #e6d7d4;
+}
+
+.product__slider--next {
+    position: absolute;
+    right: -1rem;
+    top: calc(50% - 2rem);
+    z-index: 5;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: #e6d7d4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s linear;
+}
+
+.product__slider--next i {
+    font-size: 1.6rem;
+    transition: color 0.2s linear;
+    margin-left: 0.5rem;
+}
+
+.product__slider--next:hover {
+    cursor: pointer;
+    border-color: #000000;
+}
+
+.product__slider--next:hover i {
+    color: #e6d7d4;
+}
+
 /*==============block=============*/
 /*container*/
 /*tetx mixin*/
@@ -634,7 +744,7 @@ body.lb-disable-scrolling {
     top: 0;
     left: 0;
     z-index: 15;
-    background-color: rgba(230, 215, 212, 0.9);
+    background-color: rgba(230, 215, 212, 0.95);
 }
 
 .burger__btn {
@@ -1055,10 +1165,10 @@ body.lb-disable-scrolling {
 .intro__row--button a {
     text-decoration: none;
     font-family: "Playfair Display", serif;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: #605c40;
     background-color: #e6d7d4;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     transition: color 0.2s linear, background-color 0.2s linear;
 }
 
@@ -1165,7 +1275,7 @@ body.lb-disable-scrolling {
 }
 
 .text__coll--block {
-    width: 24%;
+    width: 32%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1220,7 +1330,7 @@ body.lb-disable-scrolling {
 }
 
 .text__img--block {
-    width: 24%;
+    width: 32%;
     position: relative;
 }
 
@@ -1233,7 +1343,7 @@ body.lb-disable-scrolling {
     height: 100%;
     z-index: 5;
     transition: transform 0.3s linear;
-    background-color: rgba(230, 215, 212, 0.3);
+    background-color: rgba(230, 215, 212, 0.5);
 }
 
 .text__img--block:hover .text__img--text {
@@ -1246,14 +1356,15 @@ body.lb-disable-scrolling {
 
 @media (max-width: 991px) {
     .text__img--block {
-        width: 48%;
-        margin-bottom: 1.5rem;
+        width: 45%;
+        margin: 0.5rem;
     }
 }
 
 @media (max-width: 576px) {
     .text__img--block {
         width: 80%;
+        margin-bottom: 1.5rem;
     }
 
     .text__img--block:last-child {
@@ -1274,11 +1385,13 @@ body.lb-disable-scrolling {
     left: 5%;
     transition: left 0.3s linear;
     width: 90%;
+    background-color: #e6d7d4;
+    padding: 1rem;
 }
 
 .text__img--text h5 {
     font-family: "Playfair Display", serif;
-    color: #605c40;
+    color: #000000;
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -1286,7 +1399,7 @@ body.lb-disable-scrolling {
 
 .text__img--text p {
     font-family: "Playfair Display", serif;
-    color: #605c40;
+    color: #000000;
     font-size: 1.7rem;
     font-weight: 400;
 }
@@ -1294,11 +1407,6 @@ body.lb-disable-scrolling {
 @media (max-width: 991px) {
     .text__img {
         flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 576px) {
-    .text__img {
         justify-content: center;
     }
 }

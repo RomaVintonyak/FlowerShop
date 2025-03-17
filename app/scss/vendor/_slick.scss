@@ -1,0 +1,111 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.slick-slider {
+   position: relative;
+   -ms-user-select: none;
+   user-select: none;
+   -ms-touch-action: pan-y;
+   touch-action: pan-y;
+   -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+   position: relative;
+   overflow: hidden;
+   margin: 0;
+   padding: 0;
+   &:focus {
+      outline: none;
+   }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+   transform: translate3d(0, 0, 0);
+}
+.slick-track {
+   position: relative;
+   left: 0;
+   top: 0;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   align-items: stretch;
+}
+.slick-slide {
+   float: left;
+   min-height: 1px;
+   [dir="rtl"] & {
+      float: right;
+   }
+}
+.product__slider--prev {
+   position: absolute;
+   left: -1rem;
+   top: calc(50% - 2rem);
+   z-index: 5;
+   width: 4rem;
+   height: 4rem;
+   background-color: transparent;
+   border: 1px solid;
+   border-color: $bg-primary;
+   border-radius: 50%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-transition: border-color 0.2s linear;
+   -o-transition: border-color 0.2s linear;
+   transition: border-color 0.2s linear;
+   i {
+      font-size: 1.6rem;
+      transition: color 0.2s linear;
+   }
+   &:hover {
+      cursor: pointer;
+      border-color: $black;
+      i {
+         color: $bg-primary;
+      }
+   }
+}
+.product__slider--next {
+   position: absolute;
+   right: -1rem;
+   top: calc(50% - 2rem);
+   z-index: 5;
+   width: 4rem;
+   height: 4rem;
+   background-color: transparent;
+   border: 1px solid;
+   border-color: $bg-primary;
+   border-radius: 50%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-transition: border-color 0.2s linear;
+   -o-transition: border-color 0.2s linear;
+   transition: border-color 0.2s linear;
+   i {
+      font-size: 1.6rem;
+      transition: color 0.2s linear;
+      margin-left: 0.5rem;
+   }
+   &:hover {
+      cursor: pointer;
+      border-color: $black;
+      i {
+         color: $bg-primary;
+      }
+   }
+}
