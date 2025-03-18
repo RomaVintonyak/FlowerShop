@@ -11,19 +11,21 @@
    }
    &--title {
       text-align: center;
-   }
-   h1 {
-      text-transform: uppercase;
-      font-family: $title;
-      color: $text-color;
-      font-size: 2.5rem;
-      border-bottom: 1px solid $text-color;
-      display: inline;
-      @include tablet {
-         font-size: 2rem;
-      }
-      @include mobile {
-         font-size: 1.8rem;
+      h3 {
+         font-family: $title;
+         color: $text-color;
+         border-bottom: 1px solid $text-color;
+         display: inline;
+         font-size: 3rem;
+         @include tablet {
+            font-size: 2.7rem;
+         }
+         @include mobile {
+            font-size: 2.5rem;
+         }
+         @include mobile-sm {
+            font-size: 2.2rem;
+         }
       }
    }
 }

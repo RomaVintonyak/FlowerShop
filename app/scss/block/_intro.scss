@@ -95,14 +95,19 @@
             text-decoration: none;
             font-family: $text;
             font-size: 1.8rem;
+            font-weight: 700;
             color: $text-color;
             background-color: $bg-primary;
-            padding: 1rem 1.5rem;
+            padding: 1.5rem 2.5rem;
             transition: color 0.2s linear, background-color 0.2s linear;
             &:hover {
                color: $white;
                background-color: $text-color;
                cursor: pointer;
+            }
+            @include mobile {
+               padding: 1rem 2rem;
+               font-size: 1.7rem;
             }
          }
       }

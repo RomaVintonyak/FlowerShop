@@ -1166,9 +1166,10 @@ body.lb-disable-scrolling {
     text-decoration: none;
     font-family: "Playfair Display", serif;
     font-size: 1.8rem;
+    font-weight: 700;
     color: #605c40;
     background-color: #e6d7d4;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 2.5rem;
     transition: color 0.2s linear, background-color 0.2s linear;
 }
 
@@ -1176,6 +1177,13 @@ body.lb-disable-scrolling {
     color: #ffffff;
     background-color: #605c40;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .intro__row--button a {
+        padding: 1rem 2rem;
+        font-size: 1.7rem;
+    }
 }
 
 .intro::after {
@@ -1203,24 +1211,24 @@ body.lb-disable-scrolling {
 .text__title h3 {
     font-family: "Yeseva One", serif;
     color: #605c40;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 @media (max-width: 991px) {
     .text__title h3 {
-        font-size: 3.5rem;
+        font-size: 2.7rem;
     }
 }
 
 @media (max-width: 768px) {
     .text__title h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 576px) {
     .text__title h3 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -1465,24 +1473,24 @@ body.lb-disable-scrolling {
 .works__row--title h3 {
     font-family: "Yeseva One", serif;
     color: #605c40;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 @media (max-width: 991px) {
     .works__row--title h3 {
-        font-size: 3.5rem;
+        font-size: 2.7rem;
     }
 }
 
 @media (max-width: 768px) {
     .works__row--title h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 576px) {
     .works__row--title h3 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -2483,25 +2491,25 @@ body.lb-disable-scrolling {
 
 .about__content--title h3 {
     font-family: "Yeseva One", serif;
-    font-size: 5rem;
     color: #605c40;
+    font-size: 3rem;
 }
 
 @media (max-width: 991px) {
     .about__content--title h3 {
-        font-size: 4.5rem;
+        font-size: 2.7rem;
     }
 }
 
 @media (max-width: 768px) {
     .about__content--title h3 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 576px) {
     .about__content--title h3 {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -2576,25 +2584,25 @@ body.lb-disable-scrolling {
 
 .shipping__content--title h3 {
     font-family: "Yeseva One", serif;
-    font-size: 5rem;
     color: #605c40;
+    font-size: 3rem;
 }
 
 @media (max-width: 991px) {
     .shipping__content--title h3 {
-        font-size: 4.5rem;
+        font-size: 2.7rem;
     }
 }
 
 @media (max-width: 768px) {
     .shipping__content--title h3 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 576px) {
     .shipping__content--title h3 {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -2666,24 +2674,29 @@ body.lb-disable-scrolling {
     text-align: center;
 }
 
-.contact__title h1 {
-    text-transform: uppercase;
+.contact__title--title h3 {
     font-family: "Yeseva One", serif;
     color: #605c40;
-    font-size: 2.5rem;
     border-bottom: 1px solid #605c40;
     display: inline;
+    font-size: 3rem;
 }
 
 @media (max-width: 991px) {
-    .contact__title h1 {
-        font-size: 2rem;
+    .contact__title--title h3 {
+        font-size: 2.7rem;
     }
 }
 
 @media (max-width: 768px) {
-    .contact__title h1 {
-        font-size: 1.8rem;
+    .contact__title--title h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact__title--title h3 {
+        font-size: 2.2rem;
     }
 }
 
