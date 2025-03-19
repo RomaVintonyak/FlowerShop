@@ -24,22 +24,13 @@
       }
    }
    &__suptitle {
-      text-align: center;
       margin-bottom: 2rem;
-      h4 {
+      p {
+         text-indent: 3rem;
          font-family: $text;
          color: $text-color;
          font-weight: 500;
-         font-size: 2rem;
-         @include tablet {
-            font-size: 1.9rem;
-         }
-         @include mobile {
-            font-size: 1.8rem;
-         }
-         @include mobile-sm {
-            font-size: 1.7rem;
-         }
+         font-size: 1.7rem;
       }
       @include mobile {
          margin-bottom: 1.5rem;

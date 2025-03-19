@@ -1239,33 +1239,15 @@ body.lb-disable-scrolling {
 }
 
 .text__suptitle {
-    text-align: center;
     margin-bottom: 2rem;
 }
 
-.text__suptitle h4 {
+.text__suptitle p {
+    text-indent: 3rem;
     font-family: "Playfair Display", serif;
     color: #605c40;
     font-weight: 500;
-    font-size: 2rem;
-}
-
-@media (max-width: 991px) {
-    .text__suptitle h4 {
-        font-size: 1.9rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .text__suptitle h4 {
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .text__suptitle h4 {
-        font-size: 1.7rem;
-    }
+    font-size: 1.7rem;
 }
 
 @media (max-width: 768px) {
