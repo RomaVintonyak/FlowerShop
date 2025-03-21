@@ -32,20 +32,26 @@
          margin-bottom: 1.5rem;
       }
    }
+   &--block {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      @include mobile {
+         margin-bottom: 1.5rem;
+         flex-wrap: wrap;
+      }
+   }
    &--text {
       position: relative;
       p {
          font-family: $text;
-         font-size: 2rem;
+         font-size: 1.7rem;
          font-weight: 500;
          color: $text-color;
-         margin-bottom: 2rem;
+         margin-bottom: 1rem;
          &:last-child {
             margin-bottom: 0;
-         }
-         @include mobile {
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
          }
          @include mobile-sm {
             font-size: 1.6rem;
@@ -59,7 +65,139 @@
          z-index: 15;
          width: 100%;
          height: 2px;
-         background-color: $bg-primary;
+         background-color: rgba($text-color, 0.4);
       }
    }
+}
+.block__text {
+   width: 45%;
+   &--title {
+      margin-bottom: 1.5rem;
+      h4 {
+         font-family: $title;
+         font-size: 2rem;
+         color: $text-color;
+         font-weight: 500;
+      }
+   }
+   &--tab {
+      margin-bottom: 2.5rem;
+   }
+   &--button {
+      a {
+         text-decoration: none;
+         font-family: $text;
+         font-size: 1.8rem;
+         font-weight: 700;
+         color: $text-color;
+         background-color: $bg-primary;
+         padding: 0.8rem 1.5rem;
+         transition: color 0.2s linear, background-color 0.2s linear;
+         &:hover {
+            color: $white;
+            background-color: $text-color;
+            cursor: pointer;
+         }
+         @include mobile {
+            padding: 1rem 2rem;
+            font-size: 1.7rem;
+         }
+      }
+   }
+   @include tablet {
+      width: 49%;
+   }
+   @include mobile {
+      width: 100%;
+      margin-bottom: 2rem;
+   }
+}
+.block__slider {
+   width: 45%;
+   &--top {
+      margin-bottom: 2rem;
+      @include mobile {
+         margin-bottom: 1.5rem;
+      }
+   }
+   &--bottom {
+      img {
+         margin: 0 1rem;
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+   @include tablet {
+      width: 49%;
+   }
+   @include mobile {
+      width: 100%;
+   }
+}
+.nav__tabs {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   width: 100%;
+   height: 4rem;
+   margin-bottom: 1.5rem;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   border-bottom: 3px solid rgba($text-color, 0.4);
+   &--item {
+      position: relative;
+      bottom: -3px;
+      height: 100%;
+      transition: border-bottom 0.1s linear;
+      &:hover {
+         border-bottom: 3px solid $text-color;
+         cursor: pointer;
+         a {
+            color: rgba($text-color, 1);
+         }
+      }
+   }
+   &--link {
+      font-family: $text;
+      color: rgba($text-color, 0.8);
+      font-weight: 500;
+      font-size: 1.7rem;
+      text-decoration: none;
+      transition: color 0.1s linear;
+   }
+}
+.item__active {
+   border-bottom: 3px solid $text-color;
+   a {
+      color: rgba($text-color, 1);
+   }
+}
+.content__tab {
+   width: 100%;
+   overflow: hidden;
+   &--block {
+      position: relative;
+      top: 0;
+      left: -100%;
+      height: 0;
+      z-index: 2;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s linear, visibility 0.2s linear, left 0.2s linear, height 0.2s linear;
+      p {
+         font-family: $text;
+         text-indent: 3rem;
+         color: $text-color;
+         font-weight: 500;
+         font-size: 1.7rem;
+      }
+   }
+}
+.tab__show {
+   visibility: visible;
+   opacity: 1;
+   left: 0;
+   height: 100%;
 }
