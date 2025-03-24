@@ -185,13 +185,36 @@
       z-index: 2;
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.2s linear, visibility 0.2s linear, left 0.2s linear, height 0.2s linear;
+      transition: opacity 0.2s linear, visibility 0.2s linear;
+      ul {
+         margin: 0;
+         margin-bottom: 1rem;
+         li {
+            margin-bottom: 1rem;
+            p {
+               text-indent: 0;
+            }
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+      h5{
+         font-family: $title;
+         color: $text-color;
+         font-size: 1.6rem;
+         margin-bottom: 1rem;
+         font-weight: 400;
+      }
       p {
          font-family: $text;
          text-indent: 3rem;
          color: $text-color;
-         font-weight: 500;
-         font-size: 1.7rem;
+         font-size: 1.5rem;
+         margin-bottom: 1rem;
+         &:last-child {
+            margin-bottom: 0;
+         }
       }
    }
 }

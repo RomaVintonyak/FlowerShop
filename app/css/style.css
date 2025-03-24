@@ -2697,15 +2697,44 @@ body.lb-disable-scrolling {
     z-index: 2;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.2s linear, visibility 0.2s linear, left 0.2s linear, height 0.2s linear;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.content__tab--block ul {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.content__tab--block ul li {
+    margin-bottom: 1rem;
+}
+
+.content__tab--block ul li p {
+    text-indent: 0;
+}
+
+.content__tab--block ul li:last-child {
+    margin-bottom: 0;
+}
+
+.content__tab--block h5 {
+    font-family: "Yeseva One", serif;
+    color: #605c40;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
 }
 
 .content__tab--block p {
     font-family: "Playfair Display", serif;
     text-indent: 3rem;
     color: #605c40;
-    font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content__tab--block p:last-child {
+    margin-bottom: 0;
 }
 
 .tab__show {
